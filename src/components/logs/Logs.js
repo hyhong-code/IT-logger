@@ -1,15 +1,14 @@
 import React, { useEffect, useState } from "react";
 import LogItem from "./LogItem";
-import PropTypes from "prop-types";
+import Preloader from "../layout/Preloader";
 
-const Logs = (props) => {
+const Logs = () => {
   const [logs, setLogs] = useState([]);
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
     getLogs();
     // eslint-disable-next-line
-    console.log(logs);
   }, []);
 
   const getLogs = async () => {
@@ -21,7 +20,7 @@ const Logs = (props) => {
   };
 
   if (loading) {
-    return <h4>Loading...</h4>;
+    return <Preloader />;
   }
 
   return (
@@ -39,7 +38,5 @@ const Logs = (props) => {
     </div>
   );
 };
-
-Logs.propTypes = {};
 
 export default Logs;
