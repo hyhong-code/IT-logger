@@ -12,11 +12,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "json-server": "json-server --warch db.json --port --port 5000",
-    "dev": "concurrently \"npm start\" \"npm run json-server\"",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "json-server": "json-server --watch db.json --port 5000",
+    "dev": "concurrently npm:start npm:json-server"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -36,5 +33,6 @@
   "devDependencies": {
     "concurrently": "^5.2.0",
     "json-server": "^0.16.1"
-  }
+  },
+  "proxy": "http://localhost:5000"
 }
