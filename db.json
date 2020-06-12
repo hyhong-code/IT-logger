@@ -1,11 +1,11 @@
 {
   "logs": [
     {
+      "id": 1,
       "message": "Lets try this",
       "attention": true,
-      "tech": "Sam Smith",
-      "date": "2020-06-12T01:55:30.844Z",
-      "id": 1
+      "tech": "John Doe",
+      "date": "2020-06-12T02:46:32.160Z"
     }
   ],
   "techs": [
