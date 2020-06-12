@@ -1,20 +1,5 @@
 {
-  "logs": [
-    {
-      "message": "Change network config",
-      "attention": true,
-      "tech": "Sam Smith",
-      "date": "2020-06-12T01:08:11.712Z",
-      "id": 1
-    },
-    {
-      "message": "Harddrive maintenance ",
-      "attention": false,
-      "tech": "John Does",
-      "date": "2020-06-12T01:08:31.690Z",
-      "id": 2
-    }
-  ],
+  "logs": [],
   "techs": [
     {
       "id": 1,
