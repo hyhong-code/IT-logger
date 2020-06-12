@@ -20,7 +20,6 @@ export const getLogs = () => async (dispatch) => {
       payload: data,
     });
   } catch (error) {
-    console.error(error.response.data);
     dispatch({
       type: LOGS_ERROR,
       payload: error.response.statusText,
@@ -51,7 +50,6 @@ export const addLog = (formData) => async (dispatch) => {
       payload: data,
     });
   } catch (error) {
-    console.error(error.response.data);
     dispatch({
       type: LOGS_ERROR,
       payload: error.response.statusText,
@@ -69,7 +67,6 @@ export const deleteLog = (id) => async (dispatch) => {
       payload: id,
     });
   } catch (error) {
-    console.error(error.response.data);
     dispatch({
       type: LOGS_ERROR,
       payload: error.response.statusText,
@@ -106,7 +103,6 @@ export const updateLog = (log) => async (dispatch) => {
       payload: data,
     });
   } catch (error) {
-    console.error(error.response.data);
     dispatch({
       type: LOGS_ERROR,
       payload: error.response.statusText,
@@ -124,7 +120,6 @@ export const searchLogs = (text) => async (dispatch) => {
       payload: data,
     });
   } catch (error) {
-    console.error(error.response.data);
     dispatch({
       type: LOGS_ERROR,
       payload: error.response.statusText,

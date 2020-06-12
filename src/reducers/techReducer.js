@@ -25,8 +25,13 @@ const techReducer = (state = INITIAL_STATE, action) => {
         techs: [...state.techs, payload],
         loading: false,
       };
+    case DELETE_TECH:
+      return {
+        ...state,
+        techs: state.techs.filter((tech) => tech.id !== payload),
+        loading: false,
+      };
     case TECHS_ERROR:
-      console.error(payload);
       return { ...state, error: payload, loading: false };
     default:
       return state;

@@ -1,13 +1,5 @@
 {
-  "logs": [
-    {
-      "id": 1,
-      "message": "Lets try this",
-      "attention": true,
-      "tech": "John Doe",
-      "date": "2020-06-12T02:46:32.160Z"
-    }
-  ],
+  "logs": [],
   "techs": [
     {
       "id": 1,
@@ -18,21 +10,6 @@
       "id": 2,
       "firstName": "Sam",
       "lastName": "Smith"
-    },
-    {
-      "id": 3,
-      "firstName": "Sara",
-      "lastName": "Wilson"
-    },
-    {
-      "firstName": "sfasfa",
-      "lastName": "fdadssdfa",
-      "id": 5
-    },
-    {
-      "firstName": "Haiyang",
-      "lastName": "Hong",
-      "id": 6
     }
   ]
 }
