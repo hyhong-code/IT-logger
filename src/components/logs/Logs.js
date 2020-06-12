@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import LogItem from "./LogItem";
 import Preloader from "../layout/Preloader";
 import { connect } from "react-redux";

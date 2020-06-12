@@ -120,7 +120,7 @@ export const searchLogs = (text) => async (dispatch) => {
     const resp = await fetch(`/logs/?q=${text}`);
     const data = await resp.json();
     dispatch({
-      type: GET_LOGS,
+      type: SEARCH_LOGS,
       payload: data,
     });
   } catch (error) {
