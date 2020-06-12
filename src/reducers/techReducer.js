@@ -19,6 +19,15 @@ const techReducer = (state = INITIAL_STATE, action) => {
       return { ...state, loading: true };
     case GET_TECHS:
       return { ...state, techs: payload, loading: false };
+    case ADD_TECH:
+      return {
+        ...state,
+        techs: [...state.techs, payload],
+        loading: false,
+      };
+    case TECHS_ERROR:
+      console.error(payload);
+      return { ...state, error: payload, loading: false };
     default:
       return state;
   }
