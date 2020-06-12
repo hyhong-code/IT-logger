@@ -62,9 +62,4 @@ const AddTechModal = (props) => {
   );
 };
 
-const modalStyle = {
-  width: "75%",
-  height: "75%",
-};
-
 export default AddTechModal;
